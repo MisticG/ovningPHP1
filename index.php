@@ -34,7 +34,7 @@
 
         foreach ($numbers as $value) {
         echo "$value <br>";
-}
+        }
 
         
 
