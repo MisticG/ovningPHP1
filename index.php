@@ -71,12 +71,12 @@
         //$end används i loopen för att bestämma vilket index i arrayen som loopen ska stoppa på.
         for($i = $start; $i <= $end; $i++) {
             
-            //skriver ut arrayen på sidan
+            //skriver ut den bestämda arrayen på sidan
             echo $array[$i] . "<br>";
         };
     }
     //myCoolLoop $startar på 0, $stoppar på 22 och skriver ut $bestPlayList. Antalet bestäms i $stop-variabeln.
-    myCoolLoop(0, 22, $bestPlayList);
+    myCoolLoop(0, 7, $bestPlayList);
     ?>
     
 </body>
