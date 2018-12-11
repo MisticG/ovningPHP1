@@ -9,7 +9,7 @@
 <body>
     <?php 
 
-        /*$greetings = "Hello World";
+        $greetings = "Hello World";
         echo("<h1>" . $greetings . "</h1>");
 
         echo ("<br>" . "<br>");
@@ -37,38 +37,46 @@
         }
 
         //$timestoLoop = antal gånger loopen ska köras. Funktionen heter myCoolLoop()
-        function myCoolLoop($timestoLoop) {
+        /*function myCoolLoop($timestoLoop) {
             //variabeln läggs in direkt i loopen
             for($number = 1; $number<=$timestoLoop; $number++) {
                 echo $number . "<br>";
             };
         }
         //kör funktionen utanför funktionen och skriv in antal gånger
-        myCoolLoop(20);
+        myCoolLoop(20);*/
 
         $buu = "foobar";
-        */
         
-    ?>
-
-    <?php 
     
     //echo $buu "<br>";
+    //array med låtar
+    $bestPlayList = array("MJ - Thriller", "Madonna - Rain", "Marshmallow - Happier", "Abba - Dancing Queen", "Abba - Mama Mia", "Ariana Grande - Nånting", "Barry White - Never gonna give you up", "20 seconds of summer - Youngblood", "Madonna - Playground", "Madonna - Cherish");
 
+    //funktion för att ta ut det minsta värdet
     function minsta($valueOne, $valueTwo) {
         $smallestValue = min($valueOne, $valueTwo);
-        echo $smallestValue;
-    }
+        return $smallestValue;
+    };
+    
+    //funktion för vart arrayen ska börja och sluta och för att den ska köras även om värdet för stop är mer än längden på array.
+    function myCoolLoop($start, $stop, $array) {
 
-    minsta(3, 5);
-    
-    
-    
-    
-    
-    
-    
-    
+        //längd på array
+        $lengthSongs = count($array) - 1;
+        
+        //$end får tillbaka returvärdet på funktionen. Dvs det minsta värdet.
+        $end = minsta($stop, $lengthSongs);
+        
+        //$end används i loopen för att bestämma vilket index i arrayen som loopen ska stoppa på.
+        for($i = $start; $i <= $end; $i++) {
+            
+            //skriver ut arrayen på sidan
+            echo $array[$i] . "<br>";
+        };
+    }
+    //myCoolLoop $startar på 0, $stoppar på 22 och skriver ut $bestPlayList. Antalet bestäms i $stop-variabeln.
+    myCoolLoop(0, 22, $bestPlayList);
     ?>
     
 </body>
