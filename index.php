@@ -36,14 +36,31 @@
         echo "$value <br>";
         }
 
+        //$timestoLoop = antal gånger loopen ska köras. Funktionen heter myCoolLoop()
         function myCoolLoop($timestoLoop) {
 
             for($number = 1; $number<=$timestoLoop; $number++) {
                 echo $number . "<br>";
             };
         }
+        //kör funktionen utanför funktionen och skriv in antal gånger
         myCoolLoop(20);
+
+        $buu = "foobar";
         
+    ?>
+
+    <?php 
+    
+    echo $buu;
+    
+    
+    
+    
+    
+    
+    
+    
     ?>
     
 </body>
