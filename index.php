@@ -9,7 +9,7 @@
 <body>
     <?php 
 
-        $greetings = "Hello World";
+        /*$greetings = "Hello World";
         echo("<h1>" . $greetings . "</h1>");
 
         echo ("<br>" . "<br>");
@@ -38,7 +38,7 @@
 
         //$timestoLoop = antal gånger loopen ska köras. Funktionen heter myCoolLoop()
         function myCoolLoop($timestoLoop) {
-
+            //variabeln läggs in direkt i loopen
             for($number = 1; $number<=$timestoLoop; $number++) {
                 echo $number . "<br>";
             };
@@ -47,12 +47,20 @@
         myCoolLoop(20);
 
         $buu = "foobar";
+        */
         
     ?>
 
     <?php 
     
-    echo $buu;
+    //echo $buu "<br>";
+
+    function minsta($valueOne, $valueTwo) {
+        $smallestValue = min($valueOne, $valueTwo);
+        echo $smallestValue;
+    }
+
+    minsta(3, 5);
     
     
     
