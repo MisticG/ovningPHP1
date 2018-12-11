@@ -36,9 +36,14 @@
         echo "$value <br>";
         }
 
-        
+        function myCoolLoop($timestoLoop) {
 
-    
+            for($number = 1; $number<=$timestoLoop; $number++) {
+                echo $number . "<br>";
+            };
+        }
+        myCoolLoop(20);
+        
     ?>
     
 </body>
