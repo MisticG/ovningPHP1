@@ -77,7 +77,7 @@
     }
     //myCoolLoop $startar på 0, $stoppar på 22 och skriver ut $bestPlayList. Antalet bestäms i $stop-variabeln.
     myCoolLoop(0, 7, $bestPlayList);
-    ?>
+    ?>fdf
     
 </body>
 </html>
